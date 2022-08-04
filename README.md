@@ -112,11 +112,11 @@ data <- Seurat::as.SingleCellExperiment(seurat.object)
 ```
 
 Prior to scHumanNet construction, reduce data and use the ace class from
-the ACTIONet package. `run.ACTIONet()` is optional, this wrapper function performs matrix transformation via revese-rank normalization and imputation. For more information, refer to [Mohammadi et al. Nat Communication](https://www.nature.com/articles/s41467-020-18416-6)
+the ACTIONet package. `run.ACTIONet()` calculates multi-level archetypal set W based on similar cells. This wrapper function performs matrix transformation via revese-rank normalization and imputation. For more information, refer to [Mohammadi et al. Nat Communication](https://www.nature.com/articles/s41467-020-18416-6)
 
 ``` r
 ace <- reduce.ace(data)
-#ace = run.ACTIONet(ace = ace, thread_no = 8)
+ace = run.ACTIONet(ace = ace, thread_no = 8)
 ```
 
 The column `CellType` of the metadata here indicates the column where
