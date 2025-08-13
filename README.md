@@ -41,6 +41,17 @@ a cellular level.
 
 ## Installation
 
+### Conda Environment
+
+For a complete environment with both R and Python we first set up conda environment:
+
+```bash
+conda config --add channels conda-forge
+conda config --add channels bioconda
+conda env create -n scHumanNet -f packages/scHumanNet_env.yml
+conda activate scHumanNet
+```
+
 ### Python Package
 
 Install the Python package from the repository:
@@ -75,16 +86,6 @@ install.packages(c("igraph", "dplyr", "data.table"))
 devtools::install_github("shmohammadi86/SCINET")
 ```
 
-### Conda Environment
-
-For a complete environment with both R and Python:
-
-```bash
-conda config --add channels conda-forge
-conda config --add channels bioconda
-conda env create -n scHumanNet -f packages/scHumanNet_env.yml
-conda activate scHumanNet
-```
 
 ## Quick Start
 
