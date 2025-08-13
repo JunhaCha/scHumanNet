@@ -59,16 +59,13 @@ conda activate scHumanNet
 ### Python Package
 
 Install the Python package from the repository:
-
-
+```bash
 # Install Python package
 pip install -e .
 
 # Or install with development dependencies
 pip install -e ".[dev]"
 ```
-
-
 
 ### R Package
 
