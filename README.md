@@ -46,6 +46,10 @@ a cellular level.
 For a complete environment with both R and Python we first set up conda environment:
 
 ```bash
+# Clone the repository
+git clone https://github.com/netbiolab/scHumanNet.git
+cd scHumanNet
+
 conda config --add channels conda-forge
 conda config --add channels bioconda
 conda env create -n scHumanNet -f packages/scHumanNet_env.yml
@@ -56,10 +60,6 @@ conda activate scHumanNet
 
 Install the Python package from the repository:
 
-```bash
-# Clone the repository
-git clone https://github.com/netbiolab/scHumanNet.git
-cd scHumanNet
 
 # Install Python package
 pip install -e .
@@ -68,12 +68,14 @@ pip install -e .
 pip install -e ".[dev]"
 ```
 
+
+
 ### R Package
 
 Install the R package:
 
 1. in command line terminal:
-```r
+```bash
 R CMD INSTALL ./packages/ACTIONet_2.0.18_HNv3
 ```
 2. in R:
