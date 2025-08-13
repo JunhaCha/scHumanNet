@@ -200,11 +200,12 @@ Research
 The 10X count folder and the metadata can be downloaded from
 <http://blueprint.lambrechtslab.org>.
 
-###load libraries
+### load libraries
 ``` r
 library(ACTIONet)
 library(scHumanNet)
 library(Seurat)
+library(igraph)
 ```
 
 ``` r
