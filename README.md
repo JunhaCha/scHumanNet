@@ -70,6 +70,8 @@ install.packages(c("igraph", "dplyr", "data.table"))
 devtools::install_github("shmohammadi86/SCINET")
 ```
 
+R CMD INSTALL ./packages/ACTIONet_2.0.18_HNv3
+
 ### Conda Environment (Optional)
 
 For a complete environment with both R and Python:
