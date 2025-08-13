@@ -61,6 +61,11 @@ pip install -e ".[dev]"
 
 Install the R package:
 
+1. in command line terminal:
+```r
+R CMD INSTALL ./packages/ACTIONet_2.0.18_HNv3
+```
+2. in R:
 ```r
 # Install from the r-package directory
 devtools::install("./r-package")
@@ -70,9 +75,7 @@ install.packages(c("igraph", "dplyr", "data.table"))
 devtools::install_github("shmohammadi86/SCINET")
 ```
 
-R CMD INSTALL ./packages/ACTIONet_2.0.18_HNv3
-
-### Conda Environment (Optional)
+### Conda Environment
 
 For a complete environment with both R and Python:
 
