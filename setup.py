@@ -11,7 +11,7 @@ setup(
     description="Construction of cell-type-specific functional gene network, with SCINET and HumanNetv3",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/your-username/scHumanNet",
+    url="https://github.com/netbiolab/scHumanNet",
     packages=find_packages(where="python"),
     package_dir={"": "python"},
     classifiers=[
