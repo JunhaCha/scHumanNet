@@ -246,7 +246,7 @@ ace[['Labels']] <- meta$CellType
 
 Load HumanNetv3 interactome and retrieve cell-type specific interactions. Command `data('HNv3_XC_LLS')` loads the interactome as an igraph object named `graph.hn3`.
 ``` r
-load('/path/to/scHumanNet/data/HNv3_XC_LLS.rda')
+data('HNv3_XC_LLS')
 ace <- compute.cluster.feature.specificity(ace, ace$Labels, "celltype_specificity_scores")
 Celltype.specific.networks = run.SCINET.clusters(ace, specificity.slot.name = "celltype_specificity_scores_feature_specificity")
 ```
