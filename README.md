@@ -77,8 +77,8 @@ R CMD INSTALL ./packages/ACTIONet_2.0.18_HNv3
 ```
 2. in R:
 ```r
-# Install from the r-package directory
-devtools::install("./r-package")
+# Install from the github directory
+devtools::install_github("netbiolab/scHumanNet")
 
 # Or install required dependencies first
 install.packages(c("igraph", "dplyr", "data.table"))
